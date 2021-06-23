@@ -1,0 +1,90 @@
+// Variable overrides
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+$theme-colors: (
+  "primary": #1c3051,
+  "secondary": #0a364a,
+  "secondary-darkest":#0f1e27,
+  "secondary-darker":#0f2632,
+  "secondary-dark":#0d2e3e,
+  "secondary-light":#375465,
+  "secondary-lighter":#5d7382,
+  "secondary-lightest":#8494a0,
+  "danger": #ff4136,
+  "danger-darkest":#7a281f,
+  "danger-darker":#a43126,
+  "danger-dark":#d1392e,
+  "danger-ligth":#ff6955,
+  "danger-lighter":#ff8a75,
+  "danger-lightest":#ffa996,
+  "light": #e8e9ea,
+  "ligth-dark":#bdbebf,
+  "ligth-darker":#949595,
+  "ligth-darkest":#6d6d6e,
+  "dark": #2e2e2e,
+  "darkest":#4c4c4c,
+  "darker":#6d6d6d,
+  "orange": #ff934a,
+  "orange-darkest":#794828,
+  "orange-darker":#a36033,
+  "orange-dark":#d0793f,
+  "orange-ligth":#ffa568,
+  "orange-ligther":#ffa568,
+  "orange-lightest":#ffc9a3,
+  "purple": #4d1c7d,
+  "purple-darkest":#2a143e,
+  "purple-darker":#361752,
+  "purple-dark":#411a67,
+  "purple-ligth":#6c4192,
+  "purple-lighter":#8a65a8,
+  "purple-lightest":#a78abd,
+  "gray": #5c5d5d,
+  "gray-darkest":#2f3030,
+  "gray-darker":#3e3e3e,
+  "gray-dark":#4d4d4d,
+  "gray-ligth":#757676,
+  "gray-lighter":#8f9090,
+  "gray-lightest":#aaaaaa,
+  "submit": #11b87a,
+  "submit-darkest":#1c583d,
+  "submit-darker":#1d7750,
+  "submit-dark":#1b9765,
+  "submit-ligth":#54c58f,
+  "submit-lighter":#7cd1a5,
+  "submit-lightest":#9fddbb,
+  "gold": #e5b33d,
+  "gold-darkest":#6d5624,
+  "gold-darker":#93732c,
+  "gold-dark":#bb9335,
+  "gold-ligth":#edbf60,
+  "gold-lighter":#f3cb80,
+  "gold-lightest":#f8d8a0,
+
+);
+
+$font-family-base: Lato;
+
+.c-sidebar-nav-link {
+  color: #fff !important;
+  transition: transform 0.1s ease-in !important;
+}
+
+.c-sidebar-nav-link:hover {
+  background-color: #ebedef !important;
+  color: #000 !important;
+  transform: scale(1.1, 1) !important;
+}
+
+.c-sidebar-nav-link.c-active {
+  background-color: #ebedef !important;
+  transform: scale(1.1, 1) !important;
+
+  color: #000 !important;
+}
+
+.c-datatable-filter {
+  margin-right: auto !important;
+  justify-content: left !important;
+  width: 75vw !important;
+  margin-bottom: 2%;
+}

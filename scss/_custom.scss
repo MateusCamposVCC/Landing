@@ -1,0 +1,148 @@
+// Here you can add other styles
+.buscadorButton:hover {
+  background-color: #36648a !important;
+  transition: 0.4s;
+}
+
+.borderless {
+  border-width: 0px !important;
+}
+
+//Efeitos
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 21, 15%);
+}
+
+.removeButton {
+  transition: 0.4s !important;
+  width: 8% !important;
+  margin-left: auto;
+}
+
+.removeButton:hover {
+  background-color: rgb(253, 42, 42) !important;
+  color: #fff !important;
+  width: 15% !important;
+}
+
+.categoryInput {
+  position: relative;
+  min-width: 19px !important;
+  min-height: 19px;
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 4px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10.5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  &:checked {
+    color: white;
+    border-color: #f08804;
+    background: #f08804;
+    &::before {
+      opacity: 1;
+    }
+    ~ #categoryLabel::before {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}
+
+#categoryLabel {
+  position: relative;
+  cursor: pointer;
+  font-size: calc(0.5rem + 0.2vw);
+  padding: 0 0.25em 0;
+  user-select: none;
+  &::before {
+    position: absolute;
+    content: attr(data-content);
+    color: #000;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    // text-decoration: line-through;
+    // text-decoration-thickness: 3px;
+    transition: clip-path 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+.novo {
+  color: #fff !important;
+}
+
+.sticky-table-header-top {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  top: -1px !important;
+  border-bottom: 0px;
+  z-index: 200;
+}
+
+.sticky-top {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  top: 60px !important;
+  // background-color: rgb(68, 126, 173) !important;
+  background-color: #0a364a !important;
+  height: 70px !important;
+  color: #fff !important;
+  font-size: calc(0.4rem + 0.4vw);
+  border-bottom: 0px;
+  padding-right: 0.7rem !important;
+  padding-left: 0.5rem !important;
+}
+
+.table thead th {
+  border-bottom: 0px !important;
+}
+
+.hover:hover {
+  background-color: #f1f8ff;
+}
+//Tipografia
+.main-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  font-family: Lato;
+}
+.title1 {
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-family: Lato;
+}
+.title2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  font-family: Lato;
+}
+.subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Lato;
+}
+
+@media screen and (max-width: 1279px) {
+  .sticky-top {
+    position: static !important;
+  }
+  .tabela {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
